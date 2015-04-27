@@ -1,0 +1,43 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class='no-js lt-ie9 lt-ie8 lt-ie7'> <![endif]-->
+<!--[if IE 7]>         <html class='no-js lt-ie9 lt-ie8'> <![endif]-->
+<!--[if IE 8]>         <html class='no-js lt-ie9'> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class='no-js' data-ng-app='yelbroApp'> <!--<![endif]-->
+<head>
+  <!-- <base href="/"> -->
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width'>
+  <title>Demo3</title>
+
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" type="text/css" href="svgcss/demo.css" />
+  <!-- endbuild -->
+</head>
+<body>
+  <div>   
+    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+      <defs>
+        <linearGradient id="linearGradient" gradientTransform="rotate(0)">
+
+          <animate 
+              attributeName="gradientTransform" 
+              dur="5s" 
+              values="rotate(0);rotate(45);" 
+              repeatCount="indefinite" />
+          <stop offset="0" stop-color="#ffdddd"></stop>
+          <stop offset=".25" stop-color="#000000">
+          </stop>
+          <stop offset="1" stop-color="#ff5555"/>
+        </linearGradient> 
+      </defs>
+    
+      <rect x="0" y="0" width="50%" height="50%" fill="url(#linearGradient)"/>
+    </div>
+  </div>
+
+  <!-- 3rd party -->
+  <script src='js/jquery.min.js'></script>
+</body>
+</html>

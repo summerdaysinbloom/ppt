@@ -1,0 +1,52 @@
+/* SVG as background image (IE9/Chrome/Safari/Opera) */ 
+/*body {
+  background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8cmFkaWFsR3JhZGllbnQgaWQ9Imc0OTEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiBjeD0iNTAlIiBjeT0iNTAlIiByPSI1MCUiPgo8c3RvcCBzdG9wLWNvbG9yPSIjRkZGRkZGIiBvZmZzZXQ9IjAiLz48c3RvcCBzdG9wLWNvbG9yPSIjRkZBQUFBIiBvZmZzZXQ9IjEiLz4KPC9yYWRpYWxHcmFkaWVudD4KPHJlY3QgeD0iLTUwIiB5PSItNTAiIHdpZHRoPSIxMDEiIGhlaWdodD0iMTAxIiBmaWxsPSJ1cmwoI2c0OTEpIiAvPgo8L3N2Zz4=);
+  background-size: cover
+}*/
+/* svg */
+.icon {
+  height: 32px;
+  width: 32px;
+  margin: 0;
+  fill: #fdd;
+}
+.icon.is-check{
+  fill: #FE4365;
+}
+
+.icon.is-outlined{
+  stroke:  #FE4365;
+  stroke-width: 2px;
+  fill: transparent;
+}
+
+.icon.is-x2{
+  width: 10%;
+  height: 10%;
+}
+
+.icon.is-hoverable:hover{
+  fill: #FE4365;
+  cursor: pointer;
+}
+
+.icon.is-activeable:active{
+  transform: scale(1.25);
+  cursor: pointer;
+}
+
+.icon.is-pink--onhover:hover{
+  fill: pink;
+}
+
+.icon.is-transit{
+   -webkit-transition: all .35s ease-out;
+  -moz-transition: all .35s ease-out;
+  -ms-transition: all .35s ease-out;
+  -o-transition: all .35s ease-out;
+  transition: all .35s ease-out;
+}
+
+#mountain {
+  position: absolute;width: 100%; left: 0; right: 10px; top: 150px;
+}

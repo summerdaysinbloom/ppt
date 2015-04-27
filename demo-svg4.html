@@ -1,0 +1,53 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class='no-js lt-ie9 lt-ie8 lt-ie7'> <![endif]-->
+<!--[if IE 7]>         <html class='no-js lt-ie9 lt-ie8'> <![endif]-->
+<!--[if IE 8]>         <html class='no-js lt-ie9'> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class='no-js' data-ng-app='yelbroApp'> <!--<![endif]-->
+<head>
+  <!-- <base href="/"> -->
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width'>
+  <title>Demo3</title>
+
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" type="text/css" href="svgcss/demo.css" />
+  <!-- endbuild -->
+</head>
+<body style='margin: 0'>
+  <div>   
+    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+      <defs>
+        <linearGradient id="skyGradient" x1="100%" y1="100%">
+          <stop offset="0%" stop-color="lightblue" stop-opacity=".5">
+            <animate 
+              attributeName="stop-color" 
+              values="lightblue;blue;red;red;black;red;red;purple;lightblue" 
+              dur="15s" 
+              repeatCount="indefinite" />
+          </stop>
+          <stop offset="100%" stop-color="lightblue" stop-opacity=".5">
+            <animate 
+              attributeName="stop-color" 
+              values="lightblue;orange;purple;purple;black;purple;purple;blue;lightblue" 
+              dur="15s" 
+              repeatCount="indefinite" />
+            <animate 
+              attributeName="offset" 
+              values=".95;.80;.60;.40;.20;0;.20;.40;.60;.80;.95" 
+              dur="14s" 
+              repeatCount="indefinite" />
+          </stop>
+        </linearGradient>
+      </defs>
+    
+      <rect x="0" y="0" width="100%" height="80%" fill="url(#skyGradient)"/>
+      <img id='mountain' src='images/svg/mountain.png' />
+    </div>
+  </div>
+
+  <!-- 3rd party -->
+  <script src='js/jquery.min.js'></script>
+</body>
+</html>

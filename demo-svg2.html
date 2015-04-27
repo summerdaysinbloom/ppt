@@ -1,0 +1,44 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class='no-js lt-ie9 lt-ie8 lt-ie7'> <![endif]-->
+<!--[if IE 7]>         <html class='no-js lt-ie9 lt-ie8'> <![endif]-->
+<!--[if IE 8]>         <html class='no-js lt-ie9'> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class='no-js' data-ng-app='yelbroApp'> <!--<![endif]-->
+<head>
+  <!-- <base href="/"> -->
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width'>
+  <title>Demo</title>
+
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" type="text/css" href="svgcss/demo.css" />
+  <!-- endbuild -->
+</head>
+<body>
+  <svg height="0" width="0" style="position:absolute;margin-left: -100%;">
+    <path id="heart-icon" d="M16,28.261c0,0-14-7.926-14-17.046c0-9.356,13.159-10.399,14-0.454c1.011-9.938,14-8.903,14,0.454C30,20.335,16,28.261,16,28.261z"/>                   
+  </svg>
+  <!-- Add your site or application content here -->
+  <header><h1 style='text-align: center;'>Background / radialGradient</h1></header>
+  <div id='container'>
+    
+    <!-- SVG syntax -->
+    <div id='background'>
+      <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1 1" preserveAspectRatio="none">
+        <defs>
+          <radialGradient id="g463" gradientUnits="userSpaceOnUse" cx="50%" cy="50%" r="50%">
+            <stop stop-color="#FFFFFF" offset="0"/>
+            <stop stop-color="#FFAAAA" offset="1"/>
+          </radialGradient>
+        </defs>
+        <rect x="-50" y="-50" width="100" height="100" fill="url(#g463)" />
+        <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">radialGradient</text>
+      </svg>
+    </div>
+      
+    </div>
+  <!-- 3rd party -->
+  <script src='js/jquery.min.js'></script>
+</body>
+</html>

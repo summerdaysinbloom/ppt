@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Tech team weekly | React.js</title>
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component-m.css" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<p id='logo-bottom'>mainichi</p>
+		<div id="vs-container" class="vs-container">
+			<header class="vs-header">
+				<ul class="vs-nav">
+					<li><a href="#section-1">mainichi</a></li>
+					<li><a href="#section-2">Why</a></li>
+					<li><a href="#section-3">How</a></li>
+					<li><a href="#section-4">Improve</a></li>
+					<li><a href="#section-5">Feedback</a></li>
+					<li><a href="#section-6">Traffic</a></li>
+					<li><a href="#section-7">Reviews</a></li>
+					<li><a href="#section-8">What I've learned</a></li>
+					<li><a href="#section-9">Thanks</a></li>
+				</ul>
+			</header>
+			<div class="vs-wrapper">
+				<section id="section-1">
+					<a id='title1' class='link'><img src="images/everyday3.png" alt=""></a>			
+					<h1>Learn Japanese each time you open a new tab.</h1>
+					<img id='content_title1' src="images/capture1.png" alt="">
+				</section>
+				<section id="section-2">
+					<div class="vs-content">
+						<div>
+							<h2>I am</h2>
+							<h2><a id='title4' class='link'>currently</a></h2>
+							<h2>learning japanese</h2>
+							<img id='content_title4' src='images/apps.jpg'/>
+						</div>
+					</div>
+				</section>
+				<section id="section-3">
+					<div class="vs-content">
+						<h1><a id='title5' class='link'>mainichi.me</a></h1>
+						<div>
+							<img id='content_title5' src='images/desktop.png'/>
+						</div>
+					</div>
+				</section>
+				<section id="section-4">
+					<div class="vs-content">
+						<div>
+							<img id='mainichi-d' src='images/mainichi-d.png'/>
+						</div>
+					</div>
+				</section>
+				<section id="section-5">
+					<div class="vs-content">
+							<a id='title8' class='link'><img id='content_title7' src='images/feedback.png'/></a>
+							<img id='content_title8' src='images/suggestion.png'/>
+					</div>
+				</section>
+				<!-- Enhancement -->
+				<section id="section-6">
+					<div class="vs-content">
+						<div>
+							<a id='title3' class='link'><img src='images/tracking.png'/></a>
+							<a id='title33' class='link'><img id='content_title3' src='images/traffic.png'/></a>
+							<img id='content_title33' src='images/ga.png'/>
+						</div>
+					</div>
+				</section>
+				<!-- Review -->
+				<section id="section-7">
+					<div class="vs-content">
+					  <img src='images/review.png'/>
+					</div>
+				</section>
+				<!-- What I've learned -->
+				<section id="section-8">
+					<div class="vs-content">
+					  <a id='title30' class='link'><img id='content_title29' src='images/promote.png'/></a>
+						<img id='content_title30' src='images/share.png'/>
+					</div>
+				</section>
+				<!-- thanks -->
+				<section id="section-9">
+					<div class="vs-content">
+					  <h1>Thank you :)</h1>
+					  <h2><a id='title6' class='link'>Love mainichi</a></h2>
+						<div id='content_title6'>
+							<img src="images/webstore.png" alt="">
+						</div>
+					</div>
+				</section>
+			</div>
+		</div><!-- /vs-container -->
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/hammer.min.js"></script>
+		<script src="js/main.js"></script>
+		<script type="text/javascript">
+		$('a.link').click(function(e) {
+			var className = '#content_'+ e.currentTarget.id;
+			$(className).css('display','block');
+		})		
+		</script>
+	</body>
+</html>
